@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 int main(){
-	
-	int perc,cons;
+
+	float perc,cons;
 	char t_carro;
-	
+
 	printf("\nQual o percurso da Viagem (em Km): ");
-	scanf("%d",&perc);
-	
+	scanf("%f",&perc);
+
 	printf("\nA=8Km/L\nB=9Km/L\nC=12Km/L\nQual o tipo do carro:");
-	scanf("%s",&t_carro);
-	
+	scanf(" %c",&t_carro);
+
 	if(t_carro=='A' || t_carro=='a'){
 		cons=perc/8;
 	}
@@ -20,9 +20,8 @@ int main(){
 	if(t_carro=='C' || t_carro=='c'){
 		cons=perc/12;
 	}
-	
-	printf("\nO Consumo foi de: %d Litros!",cons);
-	
+
+	printf("\nO Consumo foi de: %f Litros!",cons);
+
 	return 0;
 }
-
